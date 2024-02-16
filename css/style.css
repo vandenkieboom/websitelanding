@@ -1,0 +1,24 @@
+body {
+  background-image: url('/assets/images/bg4_f01b4db.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game-container {
+  position: relative;
+}
+
+.game-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.game-container:hover {
+  filter: grayscale(1);
+}
