@@ -19,6 +19,103 @@ body {
   display: none;
 }
 
-.game-container:hover {
+/* .game-container:hover {
   filter: grayscale(1);
+} */
+
+#togglePassword {
+  border: none;
+}
+
+#togglePassword:hover {
+  background-color: red;
+}
+
+.progress {
+  height: 0.3rem;
+}
+
+#passwordStrength {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* div.progress {
+  background-color: rgb(209, 209, 209);
+} */
+
+#passwordMatch {
+  margin-bottom: -0.45rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  border: none;
+  color: gray;
+}
+
+#togglePassword:hover,
+#toggleRepeatPassword:hover,
+#toggleSignupPassword:hover {
+  background-color: transparent;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: var(--bs-primary);
+  box-shadow: 0px 0px 3px 0.4px #007bff6e;
+  outline: none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {   
+  border: 1px solid #ced4da;
+}
+
+.form-check-input[type="checkbox"] {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.tos {
+  text-decoration: underline;
+  color: var(--bs-primary);
+  cursor: pointer;
 }
